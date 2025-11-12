@@ -1,0 +1,25 @@
+:root {
+    --color-bg: #0C0D0F; 
+    --color-text: #ffffff;
+    --green: #63BD6C; 
+    --grey-text: #B2BFC7;
+    --border-green: #223729;
+    --bg-green: #63BD6C1C;
+    --bg-box: #13171A;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans';
+}
+
+.poppins {
+  font-family: Poppins, Inter, sans-serif;
+}
+
+ol li{
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans';
+
+}

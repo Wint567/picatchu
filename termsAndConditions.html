@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com/3.4.13"></script>
+</head>
+
+<body>
+    <header>
+        <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between pt-[35px] pb-[53px]">
+            <div class="lg:w-[164px] flex items-center">
+                <button id="open-menu" aria-label="Open menu"
+                    class="lg:hidden grid place-items-center size-9 rounded-full">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="w-full max-w-[622px] flex lg:justify-between justify-center items-center">
+                <a href="./index.html" class="lg:block hidden [15px] leading-[1] font-semibold text-center">HOME</a>
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FEATURES</a>
+                <img class="lg:w-[130px] w-[70px]" src="./public/logo.png" alt="logo">
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">WHAT INSIDE</a>
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FAQ</a>
+            </nav>
+
+            <button class="grid place-items-center bg-[var(--green)] transition-colors duration-300 hover:bg-[#34A33F]
+                w-full lg:max-w-full max-w-[44px] h-[44px] rounded-full
+                lg:w-auto lg:h-auto lg:px-5 lg:py-[14px]
+                lg:rounded-[100px]">
+                <span class="hidden lg:inline text-[15px] leading-[1] font-semibold uppercase">
+                    Download APP
+                </span>
+                <img class="lg:hidden" src="./public/icons/download.svg" alt="download">
+            </button>
+
+        </div>
+
+        <div id="menu-wrap"
+            class="fixed inset-0 z-50 opacity-0 pointer-events-none transition-opacity duration-200 lg:hidden">
+            <button id="close-backdrop" class="absolute inset-0 bg-black/60" aria-label="Close menu backdrop"></button>
+
+            <aside id="mobile-menu"
+                class="absolute left-0 top-0 h-full w-[90%] max-w-[362px] bg-[var(--color-bg)] border-r border-[#2E303E] -translate-x-full transition-transform duration-300">
+                <div class="px-4 pt-[30px] pb-[25px] flex items-center justify-between">
+                    <button id="close-menu" aria-label="Close menu"
+                        class="grid place-items-center size-9 rounded-full hover:bg-white/5">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <img src="./public/logo.png" alt="logo" class="h-[70px] w-auto mx-auto" />
+                </div>
+
+                <div class="px-6">
+                    <nav class="space-y-10">
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">HOME</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FEATURES</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">WHAT INSIDE</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FAQ</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">CONTACT US</a>
+                    </nav>
+
+
+                    <a href="#"
+                        class="mt-10 block text-center px-5 py-[14px] rounded-[100px] bg-[var(--green)] text-white text-[15px] font-semibold uppercase hover:bg-[#34A33F]">
+                        Download APP
+                    </a>
+
+                    <div class="w-full max-w-[168px] flex justify-between mt-20">
+                        <img src="./public/icons/reddit.svg" alt="reddit">
+                        <img src="./public/icons/x.svg" alt="x">
+                        <img src="./public/icons/instagram.svg" alt="instagram">
+                        <img src="./public/icons/linkedin.svg" alt="linkedin">
+                    </div>
+
+                    <img class="mt-10" src="./public/icons/google-play-badge.svg" alt="google-play">
+                    <img class="mt-5" src="./public/icons/android-badge.png" alt="android">
+
+                    <div class="mt-10 space-y-10 text-white/70 text-[14px]">
+                        <a href="#" class="block hover:text-white">TERMS & CONDITIONS</a>
+                        <a href="./privacyPolicy.html" class="block hover:text-white">PRIVACY POLICY</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </header>
+    <main class="relative">
+        <img class="absolute bottom-[432px] left-0 lg:block hidden" src="./public/left-bg-decor.svg" alt="decor">
+        <img class="absolute top-[827px] right-0 lg:block hidden" src="./public/right-bg-decor.svg" alt="decor">
+        <section class="w-full bg-[var(--bg-box)] py-[80px]">
+            <h1 class="uppercase poppins md:text-[48px] text-[40px] leading-[1.5] font-semibold text-center px-4 mb-3">
+                Terms and <span class="text-[var(--green)]">Conditions</span>
+            </h1>
+            <p class="text-[15px] leading-[1] font-[400] text-center">Last Updated:
+                <span class="text-[var(--green)]">01 December 2024</span>
+            </p>
+        </section>
+        <section
+            class="w-full max-w-[1204px] mx-auto flex flex-col lg:flex-row justify-between px-4 lg:py-[120px] pt-10 pb-[80px]">
+            <aside
+                class="relative lg:sticky lg:top-[100px] h-fit w-full max-w-[184px] flex-shrink-0 space-y-4 text-[15px] lg:mb-0 mb-10">
+                <nav class="flex flex-col space-y-4 text-white">
+                    <a href="#term1" class="hover:text-[var(--green)] transition-colors duration-200">
+                        1. Acceptance of Terms
+                    </a>
+
+                    <a href="#term2" class="hover:text-[var(--green)] transition-colors duration-200">
+                       2. Eligibility
+                    </a>
+
+                    <a href="#term3" class="hover:text-[var(--green)] transition-colors duration-200">
+                       3. Account Responsibility
+                    </a>
+
+                    <a href="#term4" class="hover:text-[var(--green)] transition-colors duration-200">
+                       4. Prohibited Activities
+                    </a>
+
+                    <a href="#term5" class="hover:text-[var(--green)] transition-colors duration-200">
+                       5. User Content
+                    </a>
+
+                    <a href="#term6" class="hover:text-[var(--green)] transition-colors duration-200">
+                       6. Privacy
+                    </a>
+
+                    <a href="#term7" class="hover:text-[var(--green)] transition-colors duration-200">
+                       7. Service Availability
+                    </a>
+
+                    <a href="#term8" class="hover:text-[var(--green)] transition-colors duration-200">
+                       8. Fees and Payment
+                    </a>
+
+                    <a href="#term9" class="hover:text-[var(--green)] transition-colors duration-200">
+                       9. Intellectual Property
+                    </a>
+
+                    <a href="#term10" class="hover:text-[var(--green)] transition-colors duration-200">
+                       10. Limitation of Liability
+                    </a>
+
+                    <a href="#term11" class="hover:text-[var(--green)] transition-colors duration-200">
+                       11. Indemnification
+                    </a>
+
+                    <a href="#term12" class="hover:text-[var(--green)] transition-colors duration-200">
+                       12. Termination
+                    </a>
+
+                    <a href="#term13" class="hover:text-[var(--green)] transition-colors duration-200">
+                       13. Governing Law
+                    </a>
+
+                    <a href="#term14" class="hover:text-[var(--green)] transition-colors duration-200">
+                       14. Changes to Terms
+                    </a>
+
+                    <a href="#term15" class="hover:text-[var(--green)] transition-colors duration-200">
+                       15. Contact Us
+                    </a>
+                </nav>
+            </aside>
+
+            <div
+                class="w-full max-w-[900px] flex-1 space-y-6 text-[15px] text-[var(--grey-text)] leading-[1.5] lg:pl-4">
+                <h1 class="text-[32px] font-[600] uppercase text-white">Welcome to Pickac4u!</h1>
+                <p class="!mb-[80px] !mt-[20px]">
+                    These Terms and Conditions ("Terms") govern your use of the pickac4u application and services
+                    (collectively, the "Service") provided by pickac4u ("we," "our," or "us"). By accessing or using the
+                    Service, you agree to these Terms. If you do not agree, you must not use the Service.
+                </p>
+
+                <section id="term1">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">1. Acceptance of Terms</h2>
+                    <p>
+                        By creating an account or using the Service, you agree to comply with these Terms and any
+                        applicable laws and regulations. If you represent an organization, you also confirm that you are
+                        authorized to bind the organization to these Terms.
+                    </p>
+                </section>
+
+                <section id="term2">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">2. Eligibility</h2>
+                    <p>
+                        You must be at least 18 years old to use the Service. By using the Service, you affirm that you
+                        meet this age requirement.
+                    </p>
+                </section>
+
+                <section id="term3">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">3. Account Responsibility</h2>
+                    <p class="mb-3">
+                        You are responsible for maintaining the confidentiality of your account credentials and for all
+                        activities under your account.
+                    </p>
+                    <p>
+                        Notify us immediately if you suspect unauthorized access to your account.
+                    </p>
+                </section>
+
+                <section id="term4">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">4. Prohibited Activities</h2>
+                    <p class="mb-1">You agree not to:</p>
+                    <ul class="list-none space-y-1 pl-1.5">
+                        <li class="relative pl-4
+                            before:content-[''] before:absolute before:left-0
+                            before:top-[0.7em] before:-translate-y-1/2
+                            before:w-1.5 before:h-1.5 before:rounded-full
+                            before:bg-[var(--grey-text)]">
+                            <span class="pr-5"></span>Use the Service for illegal, harmful, or unauthorized purposes.
+                        </li>
+
+                        <li class="relative pl-4
+                            before:content-[''] before:absolute before:left-0
+                            before:top-[0.7em] before:-translate-y-1/2
+                            before:w-1.5 before:h-1.5 before:rounded-full
+                            before:bg-[var(--grey-text)]">
+                            <span class="pr-5"></span>Upload or share files containing malware, viruses, or harmful
+                            content.
+                        </li>
+
+                        <li class="relative pl-4
+                            before:content-[''] before:absolute before:left-0
+                            before:top-[0.7em] before:-translate-y-1/2
+                            before:w-1.5 before:h-1.5 before:rounded-full
+                            before:bg-[var(--grey-text)]">
+                            <span class="pr-5"></span>Violate the intellectual property rights of others.
+                        </li>
+
+                        <li class="relative pl-4
+                            before:content-[''] before:absolute before:left-0
+                            before:top-[0.7em] before:-translate-y-1/2
+                            before:w-1.5 before:h-1.5 before:rounded-full
+                            before:bg-[var(--grey-text)]">
+                            <span class="pr-5"></span>Engage in actions that disrupt the functionality or security of
+                            the Service.
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section id="term5">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">5. User Content</h2>
+                    <p class="mb-3">
+                        You retain ownership of any files, data, or content you upload ("User Content").
+                    </p>
+                    <p class="mb-3">
+                        By uploading User Content, you grant us a non-exclusive, worldwide, royalty-free license to
+                        store, display, and transfer the content as necessary to provide the Service.
+                    </p>
+                    <p>
+                        You affirm that you have the necessary rights and permissions to upload and share the content.
+                    </p>
+                </section>
+
+                <section id="term6">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">6. Privacy</h2>
+                    <p>
+                        Your use of the Service is subject to our [Privacy Policy], which explains how we collect, use,
+                        and protect your data.
+                    </p>
+                </section>
+
+                <section id="term7">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">7. Service Availability</h2>
+                    <p class="mb-3">
+                        We aim to provide uninterrupted access to the Service but cannot guarantee availability.
+                    </p>
+                    <p>
+                        We reserve the right to modify, suspend, or discontinue the Service (or parts of it) without
+                        notice.
+                    </p>
+                </section>
+
+                <section id="term8">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">8. Fees and Payment</h2>
+                    <p class="mb-3">
+                        The Service offers premium subscription plans. See Pricing Page for details.
+                    </p>
+                    <p>
+                        All payments are non-refundable except as required by law.
+                    </p>
+                </section>
+
+                <section id="term9">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">9. Intellectual Property</h2>
+                    <p class="mb-3">
+                        All trademarks, logos, and Service-related content are the intellectual property of Pika4u or
+                        its licensors.
+                    </p>
+                    <p>
+                        You may not copy, modify, or distribute any part of the Service without written consent.
+                    </p>
+                </section>
+
+                <section id="term10">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">10. Limitation of Liability
+                    </h2>
+                    <p class="mb-1">
+                        To the maximum extent permitted by law:
+                    </p>
+                    <ul class="list-none space-y-1 pl-1.5">
+                        <li class="relative pl-4
+                            before:content-[''] before:absolute before:left-0
+                            before:top-[0.7em] before:-translate-y-1/2
+                            before:w-1.5 before:h-1.5 before:rounded-full
+                            before:bg-[var(--grey-text)]">
+                            <span class="pr-5"></span>We are not liable for indirect, incidental, or consequential
+                            damages arising from your use
+                            of the Service.
+                        </li>
+
+                        <li class="relative pl-4
+                            before:content-[''] before:absolute before:left-0
+                            before:top-[0.7em] before:-translate-y-1/2
+                            before:w-1.5 before:h-1.5 before:rounded-full
+                            before:bg-[var(--grey-text)]">
+                            <span class="pr-5"></span>Our total liability for any claim is limited to the amount you
+                            paid us, if any, for the
+                            Service.
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section id="term11">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">11. Indemnification</h2>
+                    <p>
+                        You agree to indemnify and hold harmless pickac4u , its affiliates, and employees from any
+                        claims, damages, or expenses arising out of your use of the Service or violation of these Terms.
+                    </p>
+                </section>
+
+                <section id="term12">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">12. Termination</h2>
+                    <p>
+                        We reserve the right to suspend or terminate your account if you violate these Terms or if
+                        necessary to protect the integrity of the Service.
+                    </p>
+                </section>
+
+                <section id="term13">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">13. Governing Law</h2>
+                    <p>
+                        These Terms are governed by the laws of Liberland. Any disputes will be resolved exclusively in
+                        the courts of Liberland.
+                    </p>
+                </section>
+
+                <section id="term14">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">14. Governing Law</h2>
+                    <p>
+                        We may update these Terms from time to time. You will be notified of significant changes, and
+                        your continued use of the Service after the changes indicates your acceptance.
+                    </p>
+                </section>
+
+                <section id="term15">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">15. Contact Us</h2>
+                    <p>For questions or concerns about these Terms, contact us at: <br>
+                        Email: <a href="mailto:support@pickac4u.me"
+                            class="text-[var(--green)] underline">pickac4u@mail.ru </a></p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full bg-[var(--bg-box)] border-t border-[var(--green)]">
+        <img class="mx-auto w-[70px] h-[70px] mt-[19px]" src="./public/logo.png" alt="logo">
+        <nav
+            class="w-full md:max-w-[842px] max-w-[350px] mx-auto flex justify-between items-center mt-[43px] px-[16px]">
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">HOME</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FEATURES</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">WHAT INSIDE</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FAQ</a>
+            <a class="text-[15px] leading-[1] font-[600] uppercase" href="./termsAndConditions.html">Terms &
+                Conditions</a>
+            <a class="text-[15px] leading-[1] font-[600] uppercase" href="./privacyPolicy.html">Privacy Policy</a>
+        </nav>
+        <div class="w-full max-w-[168px] mx-auto flex justify-between items-center mt-[48px]">
+            <a href="#">
+                <img src="./public/icons/reddit.svg" alt="reddit">
+            </a>
+            <a href="#">
+                <img src="./public/icons/x.svg" alt="x">
+            </a>
+            <a href="#">
+                <img src="./public/icons/instagram.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="./public/icons/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+        <div class="flex justify-center items-center gap-6 mt-[48px] mb-[24px]">
+            <img src="./public/icons/google-play-badge.svg" alt="google-play">
+            <img src="./public/icons/android-badge.png" alt="android-badge">
+        </div>
+        <div class="w-full bg-[var(--green)]">
+            <p class="text-center py-6 text-[15px] leading-[1] font-[400]">© 2025 Picatchu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

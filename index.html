@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Проект</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com/3.4.13"></script>
+</head>
+
+<body>
+    <header>
+        <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between pt-[35px] pb-[53px]">
+            <div class="lg:w-[164px] flex items-center">
+                <button id="open-menu" aria-label="Open menu"
+                    class="lg:hidden grid place-items-center size-9 rounded-full">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="w-full max-w-[622px] flex lg:justify-between justify-center items-center">
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">HOME</a>
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FEATURES</a>
+                <img class="lg:w-[130px] w-[70px]" src="./public/logo.png" alt="logo">
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">WHAT INSIDE</a>
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FAQ</a>
+            </nav>
+
+            <button class="grid place-items-center bg-[var(--green)] transition-colors duration-300 hover:bg-[#34A33F]
+                w-full lg:max-w-full max-w-[44px] h-[44px] rounded-full
+                lg:w-auto lg:h-auto lg:px-5 lg:py-[14px]
+                lg:rounded-[100px]">
+                <span class="hidden lg:inline text-[15px] leading-[1] font-semibold uppercase">
+                    Download APP
+                </span>
+                <img class="lg:hidden" src="./public/icons/download.svg" alt="download">
+            </button>
+
+        </div>
+
+        <div id="menu-wrap"
+            class="fixed inset-0 z-50 opacity-0 pointer-events-none transition-opacity duration-200 lg:hidden">
+            <button id="close-backdrop" class="absolute inset-0 bg-black/60" aria-label="Close menu backdrop"></button>
+
+            <aside id="mobile-menu"
+                class="absolute left-0 top-0 h-full w-[90%] max-w-[362px] bg-[var(--color-bg)] border-r border-[#2E303E] -translate-x-full transition-transform duration-300">
+                <div class="px-4 pt-[30px] pb-[25px] flex items-center justify-between">
+                    <button id="close-menu" aria-label="Close menu"
+                        class="grid place-items-center size-9 rounded-full hover:bg-white/5">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <img src="./public/logo.png" alt="logo" class="h-[70px] w-auto mx-auto" />
+                </div>
+
+                <div class="px-6">
+                    <nav class="space-y-10">
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">HOME</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FEATURES</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">WHAT INSIDE</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FAQ</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">CONTACT US</a>
+                    </nav>
+
+
+                    <a href="#"
+                        class="mt-10 block text-center px-5 py-[14px] rounded-[100px] bg-[var(--green)] text-white text-[15px] font-semibold uppercase hover:bg-[#34A33F]">
+                        Download APP
+                    </a>
+
+                    <div class="w-full max-w-[168px] flex justify-between mt-20">
+                        <img src="./public/icons/reddit.svg" alt="reddit">
+                        <img src="./public/icons/x.svg" alt="x">
+                        <img src="./public/icons/instagram.svg" alt="instagram">
+                        <img src="./public/icons/linkedin.svg" alt="linkedin">
+                    </div>
+
+                    <img class="mt-10" src="./public/icons/google-play-badge.svg" alt="google-play">
+                    <img class="mt-5" src="./public/icons/android-badge.png" alt="android">
+
+                    <div class="mt-10 space-y-10 text-white/70 text-[14px]">
+                        <a href="./termsAndConditions.html" class="block hover:text-white">TERMS & CONDITIONS</a>
+                        <a href="./privacyPolicy.html" class="block hover:text-white">PRIVACY POLICY</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </header>
+
+    <main class="md:mb-[120px] mb-[80px]">
+        <section class="bg-[url('./public/bg-encrypt-it.svg')] bg-no-repeat bg-cover">
+            <div class="w-full max-w-[977px] mx-auto">
+                <div
+                    class="w-full max-w-[370px] mx-auto bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[100px] flex gap-2 py-3 px-4 items-center">
+                    <img src="./public/icons/security.svg" alt="security-icon">
+                    <p class="text-[14px] leading-[1] font-[400]">Private Message System In Mobile Application</p>
+                </div>
+                <h1
+                    class="uppercase poppins md:text-[48px] text-[30px] leading-[1.5] font-semibold text-center mt-6 px-4">
+                    TAKE OR DOWNLOAD PHOTO, set the
+                    security parameters and <span class="text-[var(--green)]">encrypt it</span>
+                </h1>
+                <p
+                    class="text-[11px] leading-[1.3] font-[400] uppercase text-center mt-4 text-[var(--grey-text)] mb-14 px-4">
+                    Try the demo version by filling out the form below, to use the full version, download the app.</p>
+                <img src="./public/img-encrypt-it-md.svg" alt="Encrypt it" class="block md:hidden w-full h-[408px]" />
+                <img src="./public/img-encrypt-it.svg" alt="Encrypt it" class="hidden md:block w-full h-auto" />
+                <div class="w-full max-w-[738px] mx-auto flex gap-3 md:flex-row flex-col items-center mt-[48px]">
+                    <div
+                        class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[100px] flex items-center gap-2 py-3 px-4 ">
+                        <span
+                            class="w-5 h-5 bg-[var(--border-green)] flex items-center justify-center rounded-[100px] text-[12px] font-[400]">1</span>
+                        <p class="text-[14px] leading-[1] font-[400]">Take or Select Image</p>
+                    </div>
+                    <div
+                        class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[100px] flex items-center gap-2 py-3 px-4 ">
+                        <span
+                            class="w-5 h-5 bg-[var(--border-green)] flex items-center justify-center rounded-[100px] text-[12px] font-[400]">2</span>
+                        <p class="text-[14px] leading-[1] font-[400]">Set Lifetime & Password</p>
+                    </div>
+                    <div
+                        class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[100px] flex items-center gap-2 py-3 px-4 ">
+                        <span
+                            class="w-5 h-5 bg-[var(--border-green)] flex items-center justify-center rounded-[100px] text-[12px] font-[400]">3</span>
+                        <p class="text-[14px] leading-[1] font-[400]">Encrypt it & Get a Link or QR code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md:mt-[150px] mt-[80px]">
+            <h2 class="uppercase poppins md:text-[48px] text-[30px] leading-[1] font-semibold text-center">What You
+                <span class="text-[var(--green)]">Get</span>
+            </h2>
+            <p
+                class="text-[15px] leading-[1.3] font-[400] text-center md:mt-10 mt-5 text-[var(--grey-text)] md:mb-20 mb-10 px-3">
+                All-in-one
+                privacy: encrypted messaging, flexible access controls, and a seamless user experience built for you</p>
+            <div class="w-full max-w-[1280px] mx-auto px-4 md:px-0" data-features-slider>
+                <div class="relative">
+                    <div class="overflow-hidden md:overflow-visible" data-slider-viewport>
+                        <div class="flex gap-0 transition-transform duration-300 ease-out
+                                md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-5 md:transform-none" data-slider-track>
+                            <div class="w-full shrink-0 md:w-auto md:shrink
+                                rounded-[16px] bg-[var(--bg-box)] border border-[var(--border-green)] py-9 pl-9 pr-[30px]"
+                                data-slide>
+                                <div class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                    flex items-center justify-center">
+                                    <img src="./public/icons/get-1.svg" alt="get">
+                                </div>
+                                <h3 class="mt-4 text-[20px] leading-[1] font-semibold uppercase">
+                                    SEVERAL LEVELS OF PROTECTION
+                                </h3>
+                                <p class="mt-4 text-[15px] leading-[1.3] text-white/70">
+                                    Only those with the UPL link can access, and decryption can additionally be
+                                    protected with a password.
+                                </p>
+                            </div>
+
+                            <div class="w-full shrink-0 md:w-auto md:shrink
+                                    rounded-[16px] bg-[var(--bg-box)] border border-[var(--border-green)] p-9"
+                                data-slide>
+                                <div class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                    flex items-center justify-center">
+                                    <img src="./public/icons/get-2.svg" alt="get">
+                                </div>
+                                <h3 class="mt-4 text-[20px] leading-[1] font-semibold uppercase">
+                                    Self-destruction
+                                </h3>
+                                <p class="mt-4 text-[15px] leading-[1.3] text-white/70">
+                                    Specify the expiration time or the number of views — once these conditions are
+                                    met, the message will be deleted.
+                                </p>
+                            </div>
+
+                            <div class="w-full shrink-0 md:w-auto md:shrink
+                                     rounded-[16px] bg-[var(--bg-box)] border border-[var(--border-green)] p-9"
+                                data-slide>
+                                <div class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                    flex items-center justify-center">
+                                    <img src="./public/icons/get-3.svg" alt="get">
+                                </div>
+                                <h3 class="mt-4 text-[20px] leading-[1] font-semibold uppercase">
+                                    Full privacy
+                                </h3>
+                                <p class="mt-4 text-[15px] leading-[1.3] text-white/70">
+                                    No chat history — just create a one-time link and control its lifetime.
+                                </p>
+                            </div>
+
+                            <div class="w-full shrink-0 md:w-auto md:shrink
+                                  rounded-[16px] bg-[var(--bg-box)] border border-[var(--border-green)] p-9"
+                                data-slide>
+                                <div class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                    flex items-center justify-center">
+                                    <img src="./public/icons/get-4.svg" alt="get">
+                                </div>
+                                <h3 class="mt-4 text-[20px] leading-[1] font-semibold uppercase">
+                                    Zero unwanted witnesses
+                                </h3>
+                                <p class="mt-4 text-[15px] leading-[1.3] text-white/70">
+                                    Content isn’t indexed, views are limited, and only you and the recipient know
+                                    about the conversation.
+                                </p>
+                            </div>
+
+                            <div class="w-full shrink-0 md:w-auto md:shrink
+                                rounded-[16px] bg-[var(--bg-box)] border border-[var(--border-green)] p-9" data-slide>
+                                <div class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                    flex items-center justify-center">
+                                    <img src="./public/icons/get-5.svg" alt="get">
+                                </div>
+                                <h3 class="mt-4 text-[20px] leading-[1] font-semibold uppercase">
+                                    Transparency
+                                </h3>
+                                <p class="mt-4 text-[15px] leading-[1.3] text-white/70">
+                                    Our documentation fully describes the encryption and deletion process. No
+                                    unnecessary data is stored.
+                                </p>
+                            </div>
+
+                            <div class="w-full shrink-0 md:w-auto md:shrink
+                                rounded-[16px] bg-[var(--bg-box)] border border-[var(--border-green)] p-9" data-slide>
+                                <div class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                    flex items-center justify-center">
+                                    <img src="./public/icons/get-6.svg" alt="get">
+                                </div>
+                                <h3 class="mt-4 text-[20px] leading-[1] font-semibold uppercase">
+                                    Mobile app
+                                </h3>
+                                <p class="mt-4 text-[15px] leading-[1.3] text-white/70">
+                                    All-in-one solution, always at your fingertips — maximum comfort, zero hassle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex items-center justify-center gap-2 md:hidden" data-slider-dots></div>
+                </div>
+            </div>
+        </section>
+        <section class="md:mt-[56px] mt-[80px] relative">
+            <img class="absolute right-0 top-0 md:block hidden" src="./public/decorative-element-on-the-right.svg"
+                alt="decorative-element" />
+            <div class="w-full max-w-[1404px] mx-auto">
+                <h2
+                    class="uppercase poppins md:text-[48px] text-[30px] leading-[1] font-semibold text-center md:pt-[64px]">
+                    What <span class="text-[var(--green)]">INSIDE</span>
+                </h2>
+                <p class="text-[15px] leading-[1.3] font-[400] text-center md:mt-10 mt-5 text-[var(--grey-text)] px-4">
+                    All-in-one privacy: encrypted photos, flexible access controls, and a seamless user experience built
+                    for you
+                </p>
+                <div class="flex justify-between items-center lg:flex-row flex-col md:mt-[80px] mt-[40px] px-4">
+                    <div class="space-y-[63px] lg:mb-0 mb-[63px]">
+                        <div class="flex w-full md:max-w-[409px] max-w-[370px] gap-6">
+                            <div
+                                class="w-[60px] h-[60px] rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center">
+                                <img src="./public/icons/what-inside-svg1.svg" alt="svg">
+                            </div>
+                            <div>
+                                <h4 class="uppercase text-[20px] leading-[1.3] font-semibold mb-4 pt-0.5">
+                                    ENCRYPT/DECRYPT SYSTEM
+                                </h4>
+                                <p
+                                    class="text-[15px] leading-[1.3] font-[400] text-[var(--grey-text)] md:w-[317px] w-[286px]">
+                                    Download now and enjoy secure messaging with advanced encryption features
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex w-full md:max-w-[409px] max-w-[370px] gap-6">
+                            <div
+                                class="w-[60px] h-[60px] rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center">
+                                <img src="./public/icons/what-inside-svg2.svg" alt="svg">
+                            </div>
+                            <div>
+                                <h4 class="uppercase text-[20px] leading-[1.3] font-semibold mb-4 pt-0.5">
+                                    Flexible security parameters
+                                </h4>
+                                <p
+                                    class="text-[15px] leading-[1.3] font-[400] text-[var(--grey-text)] md:w-[317px] w-[286px]">
+                                    Choose the time your photo will live, and attach a password so that no one except
+                                    the recipient can decrypt it
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex w-full md:max-w-[409px] max-w-[370px] gap-6">
+                            <div
+                                class="w-[60px] h-[60px] rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center">
+                                <img src="./public/icons/what-inside-svg3.svg" alt="svg">
+                            </div>
+                            <div>
+                                <h4 class="uppercase text-[20px] leading-[1.3] font-semibold mb-4 pt-0.5">Link or
+                                    QR-code
+                                </h4>
+                                <p
+                                    class="text-[15px] leading-[1.3] font-[400] text-[var(--grey-text)] md:w-[317px] w-[286px]">
+                                    Get a convenient link and a QR code to decrypt your image, and share them with the
+                                    recipient
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="xl:block hidden" src="./public/what-inside-img.png" alt="img">
+                    <div class="space-y-[63px]">
+                        <div class="flex w-full md:max-w-[409px] max-w-[370px] gap-6">
+                            <div
+                                class="w-[60px] h-[60px] rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center">
+                                <img src="./public/icons/what-inside-svg4.svg" alt="svg">
+                            </div>
+                            <div>
+                                <h4 class="uppercase text-[20px] leading-[1.3] font-semibold mb-4 pt-0.5">Download the
+                                    app
+                                </h4>
+                                <p
+                                    class="text-[15px] leading-[1.3] font-[400] text-[var(--grey-text)] md:w-[317px] w-[286px]">
+                                    Download now and enjoy secure messaging with advanced encryption features
+                                </p>
+                                <div class="flex gap-2.5 pt-4">
+                                    <img src="./public/icons/google-play-badge.svg" alt="google-play">
+                                    <img src="./public/icons/android-badge.png" alt="android-badge">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex w-full md:max-w-[409px] max-w-[370px] gap-6">
+                            <div
+                                class="w-[60px] h-[60px] rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center">
+                                <img src="./public/icons/what-inside-svg5.svg" alt="svg">
+                            </div>
+                            <div>
+                                <h4 class="uppercase text-[20px] leading-[1.3] font-semibold mb-4 pt-0.5">sign up &
+                                    subscribe</h4>
+                                <p
+                                    class="text-[15px] leading-[1.3] font-[400] text-[var(--grey-text)] md:w-[317px] w-[286px]">
+                                    Register your account, add funds, and unlock the full potential of our platform
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex w-full md:max-w-[409px] max-w-[370px] gap-6">
+                            <div
+                                class="w-[60px] h-[60px] rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center">
+                                <img src="./public/icons/what-inside-svg6.svg" alt="svg">
+                            </div>
+                            <div>
+                                <h4 class="uppercase text-[20px] leading-[1.3] font-semibold mb-4 pt-0.5">ENJOY</h4>
+                                <p
+                                    class="text-[15px] leading-[1.3] font-[400] text-[var(--grey-text)] md:w-[317px] w-[286px]">
+                                    Download and enjoy — everything in one app and right at your fingertips.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md:mt-[120px] mt-[80px] relative">
+            <h2 class="uppercase poppins md:text-[48px] text-[30px] leading-[1] font-semibold text-center">
+                avalalibe <span class="text-[var(--green)]">tarifs</span>
+            </h2>
+            <p class="text-[15px] leading-[1.3] font-[400] text-center md:mt-10 mt-5 text-[var(--grey-text)] px-4">
+                Find the perfect plan that fits your needs — upgrade anytime, cancel anytime
+            </p>
+            <div class="w-full max-w-[1280px] mx-auto mt-[40px] md:mt-[80px]">
+                <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3 justify-items-center xl:justify-items-stretch">
+                    <div class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px]
+                            w-full md:max-w-[410px] max-w-[370px] p-9 relative z-50">
+                        <h4 class="uppercase text-[20px] leading-[1] font-semibold mb-3">Trial</h4>
+                        <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
+                            Try it and you won’t regret it
+                        </p>
+                        <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
+                            <span class="uppercase text-[48px] leading-[1] font-semibold text-white">free</span>
+                            / per 24 hours
+                        </p>
+                        <button class="flex justify-center items-center
+                            w-full max-w-[338px] px-6
+                            h-[52px]
+                            text-[16px] leading-[1] font-[700] uppercase
+                            rounded-[100px] bg-[#1E2830]
+                            transition-colors duration-300 mx-auto md:mx-0">
+                            get started
+                        </button>
+
+                    </div>
+
+                    <div class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px]
+                        w-full md:max-w-[410px] max-w-[370px] p-9 relative z-50">
+                        <h4 class="uppercase text-[20px] leading-[1] font-semibold mb-3">STANDART</h4>
+                        <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
+                            Great for getting started
+                        </p>
+                        <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
+                            <span class="uppercase text-[48px] leading-[1] font-semibold text-white">$60</span>
+                            / per 3 month
+                        </p>
+                        <button class="flex justify-center items-center
+                            w-full max-w-[338px] px-6
+                            h-[52px]
+                            text-[16px] leading-[1] font-[700] uppercase
+                            rounded-[100px]
+                            bg-[var(--bg-box)] border-2 border-[var(--border-green)]
+                            transition-colors duration-300 mx-auto md:mx-0">
+                            get started
+                        </button>
+
+                    </div>
+
+                    <div class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px]
+                            w-full md:max-w-[410px] max-w-[370px] p-9 relative z-50
+                            md:col-span-2 md:mx-auto
+                            xl:col-span-1 xl:mx-0">
+                        <h4 class="uppercase text-[20px] leading-[1] font-semibold mb-3">Expert</h4>
+                        <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
+                            The best option for long-term use
+                        </p>
+                        <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
+                            <span class="uppercase text-[48px] leading-[1] font-semibold text-white">$90</span>
+                            / per 6 month
+                        </p>
+                        <button class="flex justify-center items-center
+                            w-full max-w-[338px] px-6
+                            h-[52px]
+                            text-[16px] leading-[1] font-[700] uppercase
+                            rounded-[100px]
+                            bg-[var(--green)] hover:bg-[#34A33F]
+                            transition-colors duration-300 mx-auto md:mx-0">
+                            get started
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <img class="absolute left-0 bottom-[28px] md:block hidden" src="./public/decorative-element-on-the-left.svg"
+                alt="decorative">
+        </section>
+        <section class="md:mt-[120px] mt-[80px] px-4">
+            <h2 class="uppercase poppins md:text-[48px] text-[30px] leading-[1] font-semibold text-center">
+                We’ve Got <span class="text-[var(--green)]">Answers</span>
+            </h2>
+            <p class="text-[15px] leading-[1.3] font-[400] text-center mt-10 text-[var(--grey-text)]">
+                Have a question? We’ve collected the most common ones and answered them all in one place — so you can
+                find what you need in seconds.
+            </p>
+            <div class="w-full max-w-[1280px] mx-auto flex flex-col lg:flex-row gap-6 items-center mt-[80px]">
+                <div class="w-full max-w-[845px]" id="faq">
+                    <div class="space-y-6">
+
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-8"
+                            data-faq-item data-open>
+                            <div class="md:w-full w-[238px]">
+                                <span class="block text-[20px] font-semibold uppercase text-left">
+                                    DO YOU KEEP IMAGES AFTER THEY ARE DELETED?
+                                </span>
+
+                                <div class="faq-body text-xs md:text-sm text-[#9BA0A6] overflow-hidden" data-faq-body>
+                                    <p class="pt-2 text-[15px] font-[400] leading-[1.3]">
+                                        No, all images are permanently deleted once their set lifetime expires.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="faq-toggle-btn shrink-0 w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                flex items-center justify-center text-[24px] leading-none
+                                absolute right-9 top-1/2 -translate-y-1/2" data-faq-toggle>
+                                <span data-faq-icon>-</span>
+                            </button>
+                        </div>
+
+
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-6"
+                            data-faq-item>
+                            <div class="md:w-full w-[225px]">
+                                <span class="block text-[20px] font-semibold uppercase text-left">
+                                    IS THE APP REQUIRED?
+                                </span>
+
+                                <div class="faq-body text-xs md:text-sm text-[#9BA0A6] overflow-hidden" data-faq-body>
+                                    <p class="pt-2 text-[15px] font-[400] leading-[1.3]">
+                                        You can access the service directly via the website — the app is optional and
+                                        only adds extra convenience.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="faq-toggle-btn shrink-0 w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                flex items-center justify-center text-[24px] leading-none
+                                absolute right-9 top-1/2 -translate-y-1/2" data-faq-toggle>
+                                <span data-faq-icon>+</span>
+                            </button>
+                        </div>
+
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-6"
+                            data-faq-item>
+                            <div class="md:w-full w-[238px]">
+                                <span class="block text-[20px] font-semibold uppercase text-left">
+                                    HOW CAN I GET A SUBSCRIPTION?
+                                </span>
+
+                                <div class="faq-body text-xs md:text-sm text-[#9BA0A6] overflow-hidden" data-faq-body>
+                                    <p class="pt-2 text-[15px] font-[400] leading-[1.3]">
+                                        Create an account, go to the billing section and choose the plan that fits your
+                                        needs.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="faq-toggle-btn shrink-0 w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                flex items-center justify-center text-[24px] leading-none
+                                absolute right-9 top-1/2 -translate-y-1/2" data-faq-toggle>
+                                <span data-faq-icon>+</span>
+                            </button>
+                        </div>
+
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-6"
+                            data-faq-item>
+                            <div class="md:w-full w-[238px]">
+                                <span class="block text-[20px] font-semibold uppercase text-left">
+                                    HOW IS THE ENCRYPTION PROCESS CARRIED OUT?
+                                </span>
+
+                                <div class="faq-body text-xs md:text-sm text-[#9BA0A6] overflow-hidden" data-faq-body>
+                                    <p class="pt-2 text-[15px] font-[400] leading-[1.3]">
+                                        All files are encrypted client-side before upload using modern cryptographic
+                                        standards.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button type="button" class="faq-toggle-btn shrink-0 w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)]
+                                flex items-center justify-center text-[24px] leading-none
+                                absolute right-9 top-1/2 -translate-y-1/2" data-faq-toggle>
+                                <span data-faq-icon>+</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full h-[454px] max-w-[411px] flex flex-col justify-between bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] p-9">
+                    <div>
+                        <div
+                            class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center mb-4">
+                            <img src="./public/icons/get-6.svg" alt="get">
+                        </div>
+                        <div>
+                            <h3 class="text-[20px] leading-[1] font-[600] mb-4 uppercase">Do you have more questions?
+                            </h3>
+                            <p class="text-[15px] leading-[1.3] font-[400] text-[var(--grey-text)]">Feel free to reach
+                                out
+                                with any questions — we’ll be happy to answer them
+                            </p>
+                        </div>
+                    </div>
+                    <button id="open-contact-modal" class="flex justify-center items-center
+                        w-full max-w-[339px] px-6 h-[52px] rounded-[100px] text-[16px] leading-[1] font-[700]
+                        uppercase bg-[var(--green)] hover:bg-[#34A33F] transition-colors duration-300 mx-auto md:mx-0"
+                    >
+                        Contact us
+                    </button>
+
+                    <div id="contact-modal"
+                        class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 opacity-0 pointer-events-none p-[15px] transition-opacity duration-300">
+                        <div
+                            class="relative w-full max-w-[753px] bg-[#1E2830] rounded-[24px] px-8 pt-6 pb-10 shadow-xl">
+                            <div class="flex items-start justify-between gap-4 mb-6">
+                                <h2 class="text-[20px] font-[600] uppercase">
+                                    Do you have more questions?
+                                </h2>
+                                <button type="button" id="close-contact-modal"
+                                    class="w-7 h-7 flex items-center justify-center rounded-full text-[18px] leading-none">
+                                    ✕
+                                </button>
+                            </div>
+
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-[10px] uppercase text-[#D2D2D2] mb-2 pl-3">Name</label>
+                                        <input type="text" placeholder="John Doe" class="w-full h-[56px] px-6 rounded-[10px] bg-[var(--bg-box)] text-sm
+                                            outline-none border border-transparent
+                                            focus:border-[var(--green)] focus:bg-[#151A1E] transition-colors" />
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block text-[10px] uppercase text-[#D2D2D2] mb-2 pl-3">Email</label>
+                                        <input type="email" placeholder="example@gmail.com" class="w-full h-[56px] px-6 rounded-[10px] bg-[var(--bg-box)] text-sm
+                                            outline-none border border-transparent
+                                            focus:border-[var(--green)] focus:bg-[#151A1E] transition-colors" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-[10px] uppercase text-[#D2D2D2] mb-2 pl-3">
+                                        Question category
+                                    </label>
+
+                                    <div class="relative" data-custom-select data-select-value="General">
+                                        <button type="button" class="w-full h-[56px] px-6 rounded-[10px] bg-[var(--bg-box)]
+                                            flex items-center justify-between text-sm text-white
+                                            border border-transparent
+                                            hover:bg-[#151A1E]
+                                            focus:outline-none focus:border-[var(--green)]
+                                            transition-colors" data-select-trigger>
+                                            <span data-select-label>Select</span>
+                                            <span class="ml-3 text-white text-[25px]" data-select-arrow>▾</span>
+                                        </button>
+
+                                        <div class="absolute left-0 right-0 mt-1 bg-[var(--bg-box)] rounded-[10px]
+                                            border border-[#252A30] shadow-[0_14px_40px_rgba(0,0,0,0.6)]
+                                            opacity-0 scale-95 pointer-events-none origin-top
+                                            transition-all duration-200 z-50" data-select-dropdown>
+                                            <button type="button" class="w-full text-left px-6 py-3 text-sm text-white/90
+                                                hover:bg-[#171C21] transition-colors" data-select-option="General">
+                                                General question
+                                            </button>
+                                            <button type="button" class="w-full text-left px-6 py-3 text-sm text-white/90
+                                                hover:bg-[#171C21] transition-colors" data-select-option="Billing">
+                                                Billing & payments
+                                            </button>
+                                            <button type="button" class="w-full text-left px-6 py-3 text-sm text-white/90
+                                                hover:bg-[#171C21] transition-colors" data-select-option="Technical">
+                                                Technical issue
+                                            </button>
+                                        </div>
+
+                                        <input type="hidden" name="category" value="" data-select-hidden />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-[10px] uppercase text-[#D2D2D2] mb-2 pl-3">
+                                        Message
+                                    </label>
+                                    <textarea rows="4" placeholder="Enter Your Question" class="w-full md:min-h-[120px] min-h-[190px] rounded-[10px] bg-[#111518] text-[15px]
+                                    px-6 py-4 resize-none outline-none border border-transparent
+                                    focus:border-[var(--green)] focus:bg-[#151A1E] transition-colors"></textarea>
+                                </div>
+
+                                <button type="submit" class="mt-4 w-full h-[52px] rounded-[100px]
+                                    bg-[var(--green)] hover:bg-[#34A33F]
+                                    text-[16px] font-[700] uppercase tracking-[0.08em]
+                                    flex items-center justify-center transition-colors">
+                                    Send message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full bg-[var(--bg-box)] border-t border-[var(--green)]">
+        <img class="mx-auto w-[70px] h-[70px] mt-[19px]" src="./public/logo.png" alt="logo">
+        <nav
+            class="w-full md:max-w-[842px] max-w-[350px] mx-auto flex justify-between items-center mt-[43px] px-[16px]">
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">HOME</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FEATURES</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">WHAT INSIDE</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FAQ</a>
+            <a class="text-[15px] leading-[1] font-[600] uppercase" href="./termsAndConditions.html">Terms &
+                Conditions</a>
+            <a class="text-[15px] leading-[1] font-[600] uppercase" href="./privacyPolicy.html">Privacy Policy</a>
+        </nav>
+        <div class="w-full max-w-[168px] mx-auto flex justify-between items-center mt-[48px]">
+            <a href="#">
+                <img src="./public/icons/reddit.svg" alt="reddit">
+            </a>
+            <a href="#">
+                <img src="./public/icons/x.svg" alt="x">
+            </a>
+            <a href="#">
+                <img src="./public/icons/instagram.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="./public/icons/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+        <div class="flex justify-center items-center gap-6 mt-[48px] mb-[24px]">
+            <img src="./public/icons/google-play-badge.svg" alt="google-play">
+            <img src="./public/icons/android-badge.png" alt="android-badge">
+        </div>
+        <div class="w-full bg-[var(--green)]">
+            <p class="text-center py-6 text-[15px] leading-[1] font-[400]">© 2025 Picatchu. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

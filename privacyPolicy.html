@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com/3.4.13"></script>
+</head>
+
+<body>
+    <header>
+        <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between pt-[35px] pb-[53px]">
+            <div class="lg:w-[164px] flex items-center">
+                <button id="open-menu" aria-label="Open menu"
+                    class="lg:hidden grid place-items-center size-9 rounded-full">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="w-full max-w-[622px] flex lg:justify-between justify-center items-center">
+                <a href="./index.html" class="lg:block hidden [15px] leading-[1] font-semibold text-center">HOME</a>
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FEATURES</a>
+                <img class="lg:w-[130px] w-[70px]" src="./public/logo.png" alt="logo">
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">WHAT INSIDE</a>
+                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FAQ</a>
+            </nav>
+
+            <button class="grid place-items-center bg-[var(--green)] transition-colors duration-300 hover:bg-[#34A33F]
+                w-full lg:max-w-full max-w-[44px] h-[44px] rounded-full
+                lg:w-auto lg:h-auto lg:px-5 lg:py-[14px]
+                lg:rounded-[100px]">
+                <span class="hidden lg:inline text-[15px] leading-[1] font-semibold uppercase">
+                    Download APP
+                </span>
+                <img class="lg:hidden" src="./public/icons/download.svg" alt="download">
+            </button>
+
+        </div>
+
+        <div id="menu-wrap"
+            class="fixed inset-0 z-50 opacity-0 pointer-events-none transition-opacity duration-200 lg:hidden">
+            <button id="close-backdrop" class="absolute inset-0 bg-black/60" aria-label="Close menu backdrop"></button>
+
+            <aside id="mobile-menu"
+                class="absolute left-0 top-0 h-full w-[90%] max-w-[362px] bg-[var(--color-bg)] border-r border-[#2E303E] -translate-x-full transition-transform duration-300">
+                <div class="px-4 pt-[30px] pb-[25px] flex items-center justify-between">
+                    <button id="close-menu" aria-label="Close menu"
+                        class="grid place-items-center size-9 rounded-full hover:bg-white/5">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <img src="./public/logo.png" alt="logo" class="h-[70px] w-auto mx-auto" />
+                </div>
+
+                <div class="px-6">
+                    <nav class="space-y-10">
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">HOME</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FEATURES</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">WHAT INSIDE</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FAQ</a>
+                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">CONTACT US</a>
+                    </nav>
+
+
+                    <a href="#"
+                        class="mt-10 block text-center px-5 py-[14px] rounded-[100px] bg-[var(--green)] text-white text-[15px] font-semibold uppercase hover:bg-[#34A33F]">
+                        Download APP
+                    </a>
+
+                    <div class="w-full max-w-[168px] flex justify-between mt-20">
+                        <img src="./public/icons/reddit.svg" alt="reddit">
+                        <img src="./public/icons/x.svg" alt="x">
+                        <img src="./public/icons/instagram.svg" alt="instagram">
+                        <img src="./public/icons/linkedin.svg" alt="linkedin">
+                    </div>
+
+                    <img class="mt-10" src="./public/icons/google-play-badge.svg" alt="google-play">
+                    <img class="mt-5" src="./public/icons/android-badge.png" alt="android">
+
+                    <div class="mt-10 space-y-10 text-white/70 text-[14px]">
+                        <a href="./termsAndConditions.html" class="block hover:text-white">TERMS & CONDITIONS</a>
+                        <a href="#" class="block hover:text-white">PRIVACY POLICY</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </header>
+    <main class="relative">
+        <img class="absolute bottom-[600px] left-0 lg:block hidden" src="./public/left-bg-decor.svg" alt="decor">
+        <img class="absolute top-[827px] right-0 lg:block hidden" src="./public/right-bg-decor.svg" alt="decor">
+        <section class="w-full bg-[var(--bg-box)] py-[80px]">
+            <h1 class="uppercase poppins md:text-[48px] text-[40px] leading-[1.5] font-semibold text-center px-4 mb-3">
+                Privacy <span class="text-[var(--green)]">Policy</span>
+            </h1>
+            <p class="text-[15px] leading-[1] font-[400] text-center">Last Updated: <span class="text-[var(--green)]">01
+                    December 2024</span></p>
+        </section>
+        <section
+            class="w-full max-w-[1267px] mx-auto flex flex-col lg:flex-row justify-between px-4 lg:py-[120px] pt-10 pb-[80px]">
+            <aside
+                class="relative lg:sticky lg:top-[100px] h-fit w-full max-w-[247px] flex-shrink-0 space-y-4 text-[15px] lg:mb-0 mb-10">
+                <nav class="flex flex-col space-y-4 text-white">
+                    <a href="#term1" class="hover:text-[var(--green)] transition-colors duration-200">
+                       1. Information We Collect
+                    </a>
+
+                    <a href="#term2" class="hover:text-[var(--green)] transition-colors duration-200">
+                       2. How We Use Your Infor mation
+                    </a>
+
+                    <a href="#term3" class="hover:text-[var(--green)] transition-colors duration-200">
+                       3. How We Share Your Information
+                    </a>
+
+                    <a href="#term4" class="hover:text-[var(--green)] transition-colors duration-200">
+                       4. Your Choices
+                    </a>
+
+                    <a href="#term5" class="hover:text-[var(--green)] transition-colors duration-200">
+                       5. Cookies and Tracking Technologies
+                    </a>
+
+                    <a href="#term6" class="hover:text-[var(--green)] transition-colors duration-200">
+                       6. Data Security
+                    </a>
+
+                    <a href="#term7" class="hover:text-[var(--green)] transition-colors duration-200">
+                       7. Data Retention
+                    </a>
+
+                    <a href="#term8" class="hover:text-[var(--green)] transition-colors duration-200">
+                       8. International Users
+                    </a>
+
+                    <a href="#term9" class="hover:text-[var(--green)] transition-colors duration-200">
+                       9. Children's Privacy
+                    </a>
+
+                    <a href="#term10" class="hover:text-[var(--green)] transition-colors duration-200">
+                       10. Third-Party Links
+                    </a>
+
+                    <a href="#term11" class="hover:text-[var(--green)] transition-colors duration-200">
+                       11. Changes to this Policy
+                    </a>
+
+                    <a href="#term12" class="hover:text-[var(--green)] transition-colors duration-200">
+                       12. Contact Us
+                    </a>
+                </nav>
+            </aside>
+            <div
+                class="w-full max-w-[900px] flex-1 space-y-6 text-[15px] text-[var(--grey-text)] leading-[1.5] lg:pl-4">
+                <h1 class="text-[32px] font-[600] uppercase text-white">Welcome to Pickac4u!</h1>
+                <p class="!mb-[80px] !mt-[20px]">
+                    Pickac4u("we," "our," or "us") respects your privacy and is committed to protecting it through this
+                    Privacy Policy. This document outlines how we collect, use, and protect your information when you
+                    use pickac4u (the "Service").
+                </p>
+
+                <section id="term1">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">1. Information We Collect</h2>
+                    <p class="mb-3">We collect information to provide and improve our Service. This may include:</p>
+
+                    <ol class="space-y-3">
+                        <li>
+                            <p>a. Information You Provide Directly</p>
+                            <p class="mt-1 lg:pl-4 pl-0">
+                                <span class="lg:pr-0 pr-4"></span>Account Information: When you create an account, we
+                                collect your name, email address,
+                                and other details you choose to provide.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>b. Automatically Collected Information</p>
+                            <p class="mt-1 lg:pl-4 pl-0">
+                                <span class="lg:pr-0 pr-4"></span>Usage Data: Information about how you use the Service,
+                                operating system, pages viewed,
+                                and time spent on the Service.
+                            </p>
+                            <p class="mt-1 lg:pl-4 pl-0">
+                                <span class="lg:pr-0 pr-4"></span>Device Data: Information about the device you use to
+                                access the Service.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>c. Third-Party Data</p>
+                            <p class="mt-1 lg:pl-4 pl-0">
+                                <span class="lg:pr-0 pr-4"></span>We may receive information from third-party services
+                                you connect to the Service, such as
+                                authentication or storage providers.
+                            </p>
+                        </li>
+                    </ol>
+
+
+                </section>
+
+                <section id="term2">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">2. How We Use Your Information
+                    </h2>
+                    <p class="mb-3">
+                        We use your information to:
+                    </p>
+                    <p class="mb-3">
+                        Provide, operate, and improve the Service.
+                    </p>
+                    <p class="mb-3">
+                        Authenticate your identity and secure your account.
+                    </p>
+                    <p class="mb-3">
+                        Respond to your inquiries and provide customer support.
+                    </p>
+                    <p class="mb-3">
+                        Send you updates, notifications, and promotional content (with your consent).
+                    </p>
+                    <p class="mb-3">
+                        Monitor and analyze trends and usage for improving the Service.
+                    </p>
+                    <p>
+                        Ensure compliance with legal obligations.
+                    </p>
+                </section>
+
+                <section id="term3">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">
+                        3. How We Share Your Information
+                    </h2>
+                    <p class="mb-3">
+                        We do not sell your information. We may share it in the following situations:
+                    </p>
+                    <p class="mb-3">
+                        Service Providers: With trusted third parties who help us operate the Service (e.g., hosting,
+                        analytics, payment processors).
+                    </p>
+                    <p class="mb-3">
+                        Legal Requirements: If required by law or to protect the rights, property, or safety of
+                        Pickac4u, users, or others.
+                    </p>
+                    <p>
+                        Business Transfers: In connection with a merger, sale, or transfer of company assets.
+                    </p>
+                </section>
+
+                <section id="term4">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">4. Your Choices</h2>
+                    <p class="mb-3">
+                        Access and Update: You can access and update your account information through your account
+                        settings.
+                    </p>
+                    <p class="mb-3">
+                        Delete Account: You may delete your account, and we will remove your information as required by
+                        law.
+                    </p>
+                    <p>
+                        Opt-Out: You can opt out of receiving promotional communications by following the unsubscribe
+                        instructions in the email or contacting us directly.
+                    </p>
+                </section>
+
+                <section id="term5">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">5. Cookies and Tracking
+                        Technologies</h2>
+                    <p class="mb-3">
+                        We use cookies and similar technologies to:
+                    </p>
+                    <p>
+                        Authenticate users.
+                    </p>
+                    <p>
+                        Remember your preferences.
+                    </p>
+                    <p class="mb-3">
+                        Analyze usage to improve our Service.
+                    </p>
+                    <p>
+                        You can control cookies through your browser settings, but disabling cookies may limit some
+                        functionality.
+                    </p>
+                </section>
+
+                <section id="term6">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">6. Data Security</h2>
+                    <p>
+                        We implement industry-standard security measures to protect your information. However, no method
+                        of transmission or storage is completely secure, and we cannot guarantee absolute security.
+                    </p>
+                </section>
+
+                <section id="term7">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">7. Data Retention</h2>
+                    <p>
+                        We retain your information only as long as necessary to provide the Service and comply with
+                        legal obligations.
+                    </p>
+                </section>
+
+                <section id="term8">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">8. International Users</h2>
+                    <p>
+                        If you access the Service from outside Liberland, your data may be transferred to and processed
+                        in Liberland, where data protection laws may differ.
+                    </p>
+                </section>
+
+                <section id="term9">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">9. Children's Privacy</h2>
+                    <p>
+                        The Service is not intended for individuals under minimum age of 16. We do not knowingly
+                        collect personal data from children without parental consent.
+                    </p>
+                </section>
+
+                <section id="term10">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">10. Third-Party Links</h2>
+                    <p>
+                        The Service may contain links to third-party websites or services. We are not responsible for
+                        their privacy practices and encourage you to review their policies.
+                    </p>
+                </section>
+
+                <section id="term11">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">11. Changes to this Policy</h2>
+                    <p>
+                        We may update this Privacy Policy from time to time. We will notify you of significant changes,
+                        and your continued use of the Service after such updates constitutes acceptance of the revised
+                        Policy.
+                    </p>
+                </section>
+
+                <section id="term12">
+                    <h2 class="text-white font-semibold text-[20px] uppercase mb-[16px]">12. Contact Us</h2>
+                    <p>For questions or concerns about this Privacy Policy, please contact us:<br>
+                        Email: <a href="mailto:support@pickac4u.me"
+                            class="text-[var(--green)] underline">pickac4u@mail.ru</a></p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full bg-[var(--bg-box)] border-t border-[var(--green)]">
+        <img class="mx-auto w-[70px] h-[70px] mt-[19px]" src="./public/logo.png" alt="logo">
+        <nav
+            class="w-full md:max-w-[842px] max-w-[350px] mx-auto flex justify-between items-center mt-[43px] px-[16px]">
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">HOME</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FEATURES</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">WHAT INSIDE</a>
+            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FAQ</a>
+            <a class="text-[15px] leading-[1] font-[600] uppercase" href="./termsAndConditions.html">Terms &
+                Conditions</a>
+            <a class="text-[15px] leading-[1] font-[600] uppercase" href="./privacyPolicy.html">Privacy Policy</a>
+        </nav>
+        <div class="w-full max-w-[168px] mx-auto flex justify-between items-center mt-[48px]">
+            <a href="#">
+                <img src="./public/icons/reddit.svg" alt="reddit">
+            </a>
+            <a href="#">
+                <img src="./public/icons/x.svg" alt="x">
+            </a>
+            <a href="#">
+                <img src="./public/icons/instagram.svg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="./public/icons/linkedin.svg" alt="linkedin">
+            </a>
+        </div>
+        <div class="flex justify-center items-center gap-6 mt-[48px] mb-[24px]">
+            <img src="./public/icons/google-play-badge.svg" alt="google-play">
+            <img src="./public/icons/android-badge.png" alt="android-badge">
+        </div>
+        <div class="w-full bg-[var(--green)]">
+            <p class="text-center py-6 text-[15px] leading-[1] font-[400]">© 2025 Picatchu. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
