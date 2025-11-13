@@ -36,7 +36,6 @@
     body.style.paddingTop = '0px';
     if (icon) icon.textContent = '+';
 
-    // py-6 -> py-8
     item.classList.remove('py-6');
     item.classList.add('py-8');
   }
@@ -45,7 +44,6 @@
     body.style.maxHeight = body.scrollHeight + 'px';
     if (icon) icon.textContent = '-';
 
-    // py-8 -> py-6
     item.classList.remove('py-8');
     item.classList.add('py-6');
   }
@@ -69,7 +67,6 @@
     toggleBtn.addEventListener('click', () => {
       const isOpen = item.classList.contains('is-open');
 
-      // закрываем остальные
       items.forEach((other) => {
         if (other === item) return;
         const b = other.querySelector('[data-faq-body]');
@@ -79,7 +76,6 @@
         closeBody(other, b, i);
       });
 
-      // переключаем текущий
       if (isOpen) {
         item.classList.remove('is-open');
         closeBody(item, body, icon);
@@ -107,7 +103,6 @@
   const closeModal = () => {
     modal.classList.add('opacity-0', 'pointer-events-none');
     modal.classList.remove('opacity-100');
-    // при закрытии также закрываем дропдауны
     document
       .querySelectorAll('[data-custom-select].is-open')
       .forEach((el) => toggleSelect(el, false));
