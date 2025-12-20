@@ -261,7 +261,7 @@
   updateLayout();
 })();
 
-document.querySelectorAll('aside nav a[href^="#"]').forEach(link => {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute('href'));
@@ -273,21 +273,3 @@ document.querySelectorAll('aside nav a[href^="#"]').forEach(link => {
     }
   });
 });
-
-const sections = document.querySelectorAll('section[id^="term"]');
-const navLinks = document.querySelectorAll('aside nav a');
-
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(sec => {
-    const offset = sec.offsetTop - 100;
-    if (scrollY >= offset) current = sec.getAttribute('id');
-  });
-  navLinks.forEach(link => {
-    link.classList.toggle('text-[var(--green)]', link.getAttribute('href') === '#' + current);
-    link.classList.toggle('text-white', link.getAttribute('href') !== '#' + current);
-  });
-});
-
-
-

@@ -26,11 +26,11 @@
             </div>
 
             <nav class="w-full max-w-[622px] flex lg:justify-between justify-center items-center">
-                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">HOME</a>
-                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FEATURES</a>
+                <a href="#home" class="lg:block hidden [15px] leading-[1] font-semibold text-center">HOME</a>
+                <a href="#features" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FEATURES</a>
                 <img class="lg:w-[130px] w-[70px]" src="./public/logo.png" alt="logo">
-                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">WHAT INSIDE</a>
-                <a href="#" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FAQ</a>
+                <a href="#what-inside" class="lg:block hidden [15px] leading-[1] font-semibold text-center">WHAT INSIDE</a>
+                <a href="#faq" class="lg:block hidden [15px] leading-[1] font-semibold text-center">FAQ</a>
             </nav>
 
             <button class="grid place-items-center bg-[var(--green)] transition-colors duration-300 hover:bg-[#34A33F]
@@ -50,7 +50,7 @@
             <button id="close-backdrop" class="absolute inset-0 bg-black/60" aria-label="Close menu backdrop"></button>
 
             <aside id="mobile-menu"
-                class="absolute left-0 top-0 h-full w-[90%] max-w-[362px] bg-[var(--color-bg)] border-r border-[#2E303E] -translate-x-full transition-transform duration-300">
+                class="absolute left-0 top-0 h-full w-[90%] max-w-[362px] bg-[var(--color-bg)] border-r border-[#2E303E] -translate-x-full transition-transform duration-300 overflow-y-auto">
                 <div class="px-4 pt-[30px] pb-[25px] flex items-center justify-between">
                     <button id="close-menu" aria-label="Close menu"
                         class="grid place-items-center size-9 rounded-full hover:bg-white/5">
@@ -62,12 +62,12 @@
                     <img src="./public/logo.png" alt="logo" class="h-[70px] w-auto mx-auto" />
                 </div>
 
-                <div class="px-6">
+                <div class="px-6 pb-[56pxч  ]">
                     <nav class="space-y-10">
-                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">HOME</a>
-                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FEATURES</a>
-                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">WHAT INSIDE</a>
-                        <a href="#" class="block text-[15px] font-medium hover:opacity-80">FAQ</a>
+                        <a href="#home" class="block text-[15px] font-medium hover:opacity-80">HOME</a>
+                        <a href="#features" class="block text-[15px] font-medium hover:opacity-80">FEATURES</a>
+                        <a href="#what-inside" class="block text-[15px] font-medium hover:opacity-80">WHAT INSIDE</a>
+                        <a href="#faq" class="block text-[15px] font-medium hover:opacity-80">FAQ</a>
                         <a href="#" class="block text-[15px] font-medium hover:opacity-80">CONTACT US</a>
                     </nav>
 
@@ -87,7 +87,7 @@
                     <img class="mt-10" src="./public/icons/google-play-badge.svg" alt="google-play">
                     <img class="mt-5" src="./public/icons/android-badge.png" alt="android">
 
-                    <div class="mt-10 space-y-10 text-white/70 text-[14px]">
+                    <div class="mt-10 space-y-10 text-[14px]">
                         <a href="./termsAndConditions.html" class="block hover:text-white">TERMS & CONDITIONS</a>
                         <a href="./privacyPolicy.html" class="block hover:text-white">PRIVACY POLICY</a>
                     </div>
@@ -97,7 +97,7 @@
     </header>
 
     <main class="md:mb-[120px] mb-[80px]">
-        <section class="bg-[url('./public/bg-encrypt-it.svg')] bg-no-repeat bg-cover">
+        <section id="home" class="bg-[url('./public/bg-encrypt-it.svg')] bg-no-repeat bg-cover">
             <div class="w-full max-w-[977px] mx-auto">
                 <div
                     class="w-full max-w-[370px] mx-auto bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[100px] flex gap-2 py-3 px-4 items-center">
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="md:mt-[150px] mt-[80px]">
+        <section id="features" class="md:mt-[150px] mt-[80px]">
             <h2 class="uppercase poppins md:text-[48px] text-[30px] leading-[1] font-semibold text-center">What You
                 <span class="text-[var(--green)]">Get</span>
             </h2>
@@ -247,7 +247,7 @@
                 </div>
             </div>
         </section>
-        <section class="md:mt-[56px] mt-[80px] relative">
+        <section id="what-inside" class="md:mt-[56px] mt-[80px] relative">
             <img class="absolute right-0 top-0 md:block hidden" src="./public/decorative-element-on-the-right.svg"
                 alt="decorative-element" />
             <div class="w-full max-w-[1404px] mx-auto">
@@ -371,7 +371,7 @@
             <div class="w-full max-w-[1280px] mx-auto mt-[40px] md:mt-[80px]">
                 <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3 justify-items-center xl:justify-items-stretch">
                     <div class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px]
-                            w-full md:max-w-[410px] max-w-[370px] p-9 relative z-50">
+                            w-full md:max-w-[410px] max-w-[370px] p-9 relative z-40">
                         <h4 class="uppercase text-[20px] leading-[1] font-semibold mb-3">Trial</h4>
                         <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
                             Try it and you won’t regret it
@@ -392,7 +392,7 @@
                     </div>
 
                     <div class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px]
-                        w-full md:max-w-[410px] max-w-[370px] p-9 relative z-50">
+                        w-full md:max-w-[410px] max-w-[370px] p-9 relative z-40">
                         <h4 class="uppercase text-[20px] leading-[1] font-semibold mb-3">STANDART</h4>
                         <p class="text-[15px] leading-[1] font-[400] mb-10 text-[var(--grey-text)]">
                             Great for getting started
@@ -414,7 +414,7 @@
                     </div>
 
                     <div class="bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px]
-                            w-full md:max-w-[410px] max-w-[370px] p-9 relative z-50
+                            w-full md:max-w-[410px] max-w-[370px] p-9 relative z-40
                             md:col-span-2 md:mx-auto
                             xl:col-span-1 xl:mx-0">
                         <h4 class="uppercase text-[20px] leading-[1] font-semibold mb-3">Expert</h4>
@@ -442,7 +442,7 @@
             <img class="absolute left-0 bottom-[28px] md:block hidden" src="./public/decorative-element-on-the-left.svg"
                 alt="decorative">
         </section>
-        <section class="md:mt-[120px] mt-[80px] px-4">
+        <section id="faq" class="md:mt-[120px] mt-[80px] px-4">
             <h2 class="uppercase poppins md:text-[48px] text-[30px] leading-[1] font-semibold text-center">
                 We’ve Got <span class="text-[var(--green)]">Answers</span>
             </h2>
@@ -454,9 +454,9 @@
                 <div class="w-full max-w-[845px]" id="faq">
                     <div class="space-y-6">
 
-                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-8"
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] pl-9 py-8 pr-[85px]"
                             data-faq-item data-open>
-                            <div class="md:w-full w-[238px]">
+                            <div>
                                 <span class="block text-[20px] font-semibold uppercase text-left">
                                     DO YOU KEEP IMAGES AFTER THEY ARE DELETED?
                                 </span>
@@ -476,9 +476,9 @@
                         </div>
 
 
-                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-6"
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] pl-9 py-6 pr-[85px]"
                             data-faq-item>
-                            <div class="md:w-full w-[225px]">
+                            <div>
                                 <span class="block text-[20px] font-semibold uppercase text-left">
                                     IS THE APP REQUIRED?
                                 </span>
@@ -498,9 +498,9 @@
                             </button>
                         </div>
 
-                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-6"
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] pl-9 py-6 pr-[85px]"
                             data-faq-item>
-                            <div class="md:w-full w-[238px]">
+                            <div>
                                 <span class="block text-[20px] font-semibold uppercase text-left">
                                     HOW CAN I GET A SUBSCRIPTION?
                                 </span>
@@ -520,9 +520,9 @@
                             </button>
                         </div>
 
-                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] px-9 py-6"
+                        <div class="faq-item relative bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] pl-9 py-6 pr-[85px]"
                             data-faq-item>
-                            <div class="md:w-full w-[238px]">
+                            <div>
                                 <span class="block text-[20px] font-semibold uppercase text-left">
                                     HOW IS THE ENCRYPTION PROCESS CARRIED OUT?
                                 </span>
@@ -544,7 +544,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-full h-[454px] max-w-[411px] flex flex-col justify-between bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] p-9">
+                    class="w-full h-[454px] lg:max-w-[411px] max-w-[845px] flex flex-col justify-between bg-[var(--bg-box)] border border-[var(--border-green)] rounded-[16px] p-9">
                     <div>
                         <div
                             class="w-11 h-11 rounded-[8px] border border-[var(--border-green)] bg-[var(--bg-green)] flex items-center justify-center mb-4">
@@ -567,7 +567,7 @@
                     </button>
 
                     <div id="contact-modal"
-                        class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 opacity-0 pointer-events-none p-[15px] transition-opacity duration-300">
+                        class="fixed inset-0 z-40 flex items-center justify-center bg-black/60 opacity-0 pointer-events-none p-[15px] transition-opacity duration-300">
                         <div
                             class="relative w-full max-w-[753px] bg-[#1E2830] rounded-[24px] px-8 pt-6 pb-10 shadow-xl">
                             <div class="flex items-start justify-between gap-4 mb-6">
@@ -616,7 +616,7 @@
                                         <div class="absolute left-0 right-0 mt-1 bg-[var(--bg-box)] rounded-[10px]
                                             border border-[#252A30] shadow-[0_14px_40px_rgba(0,0,0,0.6)]
                                             opacity-0 scale-95 pointer-events-none origin-top
-                                            transition-all duration-200 z-50" data-select-dropdown>
+                                            transition-all duration-200 z-40" data-select-dropdown>
                                             <button type="button" class="w-full text-left px-6 py-3 text-sm text-white/90
                                                 hover:bg-[#171C21] transition-colors" data-select-option="General">
                                                 General question
@@ -661,10 +661,10 @@
         <img class="mx-auto w-[70px] h-[70px] mt-[19px]" src="./public/logo.png" alt="logo">
         <nav
             class="w-full md:max-w-[842px] max-w-[350px] mx-auto flex justify-between items-center mt-[43px] px-[16px]">
-            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">HOME</a>
-            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FEATURES</a>
-            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">WHAT INSIDE</a>
-            <a class="md:block hidden text-[15px] leading-[1] font-[600] uppercase" href="#">FAQ</a>
+            <a href="#home" class="md:block hidden text-[15px] leading-[1] font-[600] uppercase">HOME</a>
+            <a href="#features" class="md:block hidden text-[15px] leading-[1] font-[600] uppercase">FEATURES</a>
+            <a href="#what-inside" class="md:block hidden text-[15px] leading-[1] font-[600] uppercase">WHAT INSIDE</a>
+            <a href="#faq" class="md:block hidden text-[15px] leading-[1] font-[600] uppercase">FAQ</a>
             <a class="text-[15px] leading-[1] font-[600] uppercase" href="./termsAndConditions.html">Terms &
                 Conditions</a>
             <a class="text-[15px] leading-[1] font-[600] uppercase" href="./privacyPolicy.html">Privacy Policy</a>
